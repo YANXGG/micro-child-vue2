@@ -1,0 +1,24 @@
+/* 测试样式隔离 */
+
+/* shadow DOM模式，可以使用全局伪类 */
+/* :root {
+    background-color: #242424;
+} */
+div {
+    background-color: yellowgreen;
+}
+@media only screen and (max-width: 800px) {
+    div {
+      background-color: lightblue;
+    }
+  }
+img {
+    display: inline-block;
+}
+#vue2-app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
